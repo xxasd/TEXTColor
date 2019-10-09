@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>根据背景色修改字体颜色</title>
+</head>
+    <script src="./js/colorpicker.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .picker {
+            margin: 30px;
+            width: 184px;
+            padding: 8px 24px;
+            border-radius: 4px;
+            line-height: 1.41176471;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <h2>点击下方选择颜色</h2>
+            <div class="picker" id="color-picker">
+                <div id="color-text">文字颜色</div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="../TEXTColor.js"></script>
+    <script>
+        "use strict";
+
+        var textDom = document.getElementById('color-text');
+        
+        var obj = document.getElementById("picker");
+        var a = Colorpicker.create({
+            el: "color-picker",
+            color: "#0081ff",
+            change: function (elem, hex) {
+                textDom.style.color = TEXTColor.colorRgb(hex);
+                elem.style.backgroundColor = hex;
+            }
+        })
+
+    </script>
+</html>
