@@ -17,7 +17,7 @@ npm install textcolor --save
 
 方法二：通过`<script>`引入
 ```
-<script type="type/javascript" src="https://unpkg.com/textcolor@1.0.0/textcolor.js" ></script>
+<script type="type/javascript" src="https://unpkg.com/textcolor@1.0.2/textcolor.js" ></script>
 ```
 
 ## 用法

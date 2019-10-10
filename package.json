@@ -1,6 +1,6 @@
 {
   "name": "textcolor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript library for find the font color according to the background color",
   "main": "textcolor.js",
   "directories": {
