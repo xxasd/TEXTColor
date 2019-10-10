@@ -21,25 +21,36 @@
         return color? '#000000': '#ffffff'
     };
 
-    TEXTColor.colorRgb = function colorRgb(hex){
-        const regColor = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
-        var sColor = hex.toLowerCase();
-        if(sColor && regColor.test(sColor)){
-            if(sColor.length === 4){
+    TEXTColor.findTextColor = function findTextColor(colorValue) {
+        // #123456或者rgb(12,34,56)转为rgb数组[12,34,56]
+        const reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+        var that = colorValue;
+        if (/^(rgb|RGB)/.test(that)) {
+            // 处理rgb转为数组
+            var aColor = that.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
+            return resBgColor(aColor);
+        } else if (reg.test(that)) {
+            // 处理十六进制色值
+            var sColor = colorValue.toLowerCase();
+            if (sColor && reg.test(sColor)) {
+                if (sColor.length === 4) {
                 var sColorNew = "#";
-                for(var i=1; i<4; i+=1){
-                    sColorNew += sColor.slice(i,i+1).concat(sColor.slice(i,i+1));
+                for (var i = 1; i < 4; i += 1) {
+                    sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1));
                 }
                 sColor = sColorNew;
             }
             //处理六位的颜色值
             var sColorChange = [];
-            for(var i=1; i<7; i+=2){
-                sColorChange.push(parseInt("0x"+sColor.slice(i,i+2)));
+            for (var i = 1; i < 7; i += 2) {
+                sColorChange.push(parseInt("0x" + sColor.slice(i, i + 2)));
             }
             return resBgColor(sColorChange);
+            } else {
+                return false;
+            }
         } else {
-            return sColor;
+            return false;
         }
     }
 
