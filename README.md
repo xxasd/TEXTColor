@@ -1,6 +1,6 @@
 # TEXTColor.js
 
-我把该函数封装起来了，你可以通过`npm install`或者引入目录下的`TEXTColor.js`使用。
+我把该函数封装起来了，你可以通过`npm install`或者引入`github`目录下的`textcolor.js`使用。
 
 ![效果](https://user-gold-cdn.xitu.io/2019/10/10/16db325a96df5612?w=400&h=324&f=gif&s=886534) 
 
@@ -26,7 +26,7 @@ npm install textcolor --save
 import TEXTColor from 'textcolor-js'
 
 let hex = '#000000';        // or '#666' or 'rgb(12,34,56)'
-let textcolor = TEXTColor.colorRgb(hex);
+let textcolor = TEXTColor.findTextColor(hex);
 console.log(textcolor)      // #ffffff
 ```
 
@@ -44,7 +44,7 @@ var a = Colorpicker.create({
     el: "color-picker",
     color: "#0081ff",
     change: function (elem, hex) {
-        >textDom.style.color = TEXTColor.colorRgb(hex);
+        >textDom.style.color = TEXTColor.findTextColor(hex);
         elem.style.backgroundColor = hex;
     }
 })
