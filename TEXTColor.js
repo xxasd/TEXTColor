@@ -1,3 +1,9 @@
+/**
+ * JavaScript library for find the font color according to the background color
+ * 
+ * Author: A mile
+ */
+
 (function() {
 
     var root = this;

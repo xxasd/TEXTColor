@@ -8,19 +8,27 @@
 
 自定义主题色时，往往会遇到一个问题就是背景色可能会和文字的颜色重叠。
 
-## install
+## 安装
 
-通过`npm`引入
+方法一：通过`npm`引入
 ```
-npm install textcolor-js --save
+npm install textcolor --save
 ```
 
-通过`<script>`引入
+方法二：通过`<script>`引入
 ```
-<script type="type/javascript" src="" ></script>
+<script type="type/javascript" src="https://unpkg.com/textcolor@1.0.0/textcolor.js" ></script>
 ```
 
 ## 用法
+
+```
+import TEXTColor from 'textcolor-js'
+
+let hex = '#000000';        // or '#666' or 'rgb(12,34,56)'
+let textcolor = TEXTColor.colorRgb(hex);
+console.log(textcolor)      // #ffffff
+```
 
 参考`example`目录下的`demo.html`
 
@@ -36,7 +44,7 @@ var a = Colorpicker.create({
     el: "color-picker",
     color: "#0081ff",
     change: function (elem, hex) {
-        textDom.style.color = TEXTColor.colorRgb(hex);
+        >textDom.style.color = TEXTColor.colorRgb(hex);
         elem.style.backgroundColor = hex;
     }
 })
