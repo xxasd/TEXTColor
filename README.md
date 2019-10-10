@@ -2,8 +2,6 @@
 
 我把该函数封装起来了，你可以通过`npm install`或者引入目录下的`TEXTColor.js`使用。
 
-使用效果图
-
 ![效果](https://user-gold-cdn.xitu.io/2019/10/10/16db325a96df5612?w=400&h=324&f=gif&s=886534) 
 
 ## 使用场景
