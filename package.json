@@ -1,0 +1,28 @@
+{
+  "name": "textcolor-js",
+  "version": "1.0.0",
+  "description": "JavaScript library for find the font color according to the background color",
+  "main": "textcolor.js",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxasd/TEXTColor"
+  },
+  "keywords": [
+    "TEXTColor"
+  ],
+  "author": "A mile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxasd/TEXTColor/issues"
+  },
+  "homepage": "https://github.com/xxasd/TEXTColor",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "example"
+  ],
+  "devDependencies": {}
+}

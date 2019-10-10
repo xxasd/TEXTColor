@@ -18,7 +18,7 @@
 
     function resBgColor(rgbArr) {
         var color = 0.213 * rgbArr[0] + 0.715 * rgbArr[1] + 0.072 * rgbArr[2] > 255 / 2;
-        return color?'#000000':'#ffffff'
+        return color? '#000000': '#ffffff'
     };
 
     TEXTColor.colorRgb = function colorRgb(hex){

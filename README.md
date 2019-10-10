@@ -1,6 +1,10 @@
 # TEXTColor.js
 
-根据背景色修改字体颜色
+公司的项目要求用户可以自定义应用的主题色，然后就发现了一个问题。如果用户选择的色调偏黑色，相应的文字就要使用白色，如果用户选择的色调骗白色，相应的文字就要使用黑色。
+
+## 使用场景
+
+自定义主题色时，往往会遇到一个问题就是背景色可能会和文字的颜色重叠。
 
 ## install
 
@@ -22,7 +26,7 @@ npm install TEXTColor-js --save
 
 为了方便更直观的察觉背景色变化对文字的影响，我在`demo.html`内引入了颜色选择器`colorpicker.js`。可以下载该案例查看背景色的改变对文字改变的影响。
 
-### JavaScript
+*JavaScript:*
 ```
 var textDom = document.getElementById('color-text');
 var obj = document.getElementById("picker");
@@ -36,7 +40,7 @@ var a = Colorpicker.create({
 })
 ```
 
-### HTML
+*HTML:*
 ```
 <div class="container">
     <h2>点击下方选择颜色</h2>
