@@ -2,7 +2,7 @@
 
 我把该函数封装起来了，你可以通过`npm install`或者引入`github`目录下的`textcolor.js`使用。
 
-![效果](https://user-gold-cdn.xitu.io/2019/10/10/16db325a96df5612?w=400&h=324&f=gif&s=886534) 
+![效果](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/10/10/16db325a96df5612~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp) 
 
 ## 使用场景
 
