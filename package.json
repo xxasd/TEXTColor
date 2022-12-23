@@ -1,8 +1,9 @@
 {
   "name": "textcolor",
   "version": "1.0.2",
-  "description": "JavaScript library for find the font color according to the background color",
-  "main": "textcolor.js",
+  "description": "Return dark or light color according to the current hex.",
+  "main": "textcolor.min.js",
+  "types": "index.d.ts",
   "directories": {
     "example": "example"
   },
@@ -14,7 +15,7 @@
     "TEXTColor"
   ],
   "author": "A mile",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xxasd/TEXTColor/issues"
   },

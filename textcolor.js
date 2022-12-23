@@ -1,11 +1,19 @@
 /**
- * JavaScript library for find the font color according to the background color
- * 
+ * Return dark or light color according to the current hex.
  * Author: A mile
+ * 
+ * @since 1.1.0
+ * @param {string} hex current hex.
+ * @returns {string} Return dark or light.
+ * @example
+ * 
+ * findTextColor(rgb(255, 255, 255))
+ * // => black
+ * 
+ * findTextColor('#000')
+ * // => white
  */
-
 (function() {
-
     var root = this;
 
     var TEXTColor = function(obj) {
@@ -46,7 +54,7 @@
                 }
                 sColor = sColorNew;
             }
-            //处理六位的颜色值
+            // 处理六位的颜色值
             var sColorChange = [];
             for (var i = 1; i < 7; i += 2) {
                 sColorChange.push(parseInt("0x" + sColor.slice(i, i + 2)));
